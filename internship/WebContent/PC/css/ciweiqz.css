@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	outline: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,li {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+button {
+	border: 0px;
+}
+
+/*解决高度塌陷问题，应用在父容器上*/
+.clearfix:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+/*头部导航*/
+.header {
+	position: relative;
+	color: #999;
+	background: #fff;
+	overflow: hidden;
+	box-shadow: 0 0 5px rgba(221,221,221,0.8);
+}
+
+.container {
+	width: 1124px;
+	margin: 0 auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+/*logo*/
+.container .logo {
+	height: 50px;
+	margin: 4px 0;
+	overflow: hidden;
+	float: left;
+}
+
+.container .logo a {
+	float: left;
+}
+
+.container .logo span {
+	margin-top: 24px;
+	margin-left: 9px;
+	font-size: 12px;
+	float: left;
+}
+
+/*主导航*/
+.container .nav-main {
+	margin-left: 30px;
+	float: left;
+}
+
+.container .nav-main a {
+	line-height: 58px;
+	color: #333;
+	font-size: 17px;
+	padding: 0 24px;
+	margin: 0 2px;
+	/*position: relative;*/
+	float: left;
+}
+
+.container .nav-main a:hover {
+	background: #34b9be;
+	color: #fff;
+}
+
+/*入口导航*/
+.container .nav-user {
+	float: right;
+}
+.container .nav-user a {
+	line-height: 58px;
+	margin-left: 24px;
+	color: #333;
+	font-size: 15px;
+	font-family: "微软雅黑"；
+}
+
+.container .nav-user a:hover {
+	color: #34b9be;
+}
+
+/*主体内容*/
+.widget-job {
+	background: url(../images/job.png) center top no-repeat;
+	width: 100%;
+	min-height: 425px;
+	padding:30px;
+}
+.widget-job .container-1{
+	width: 1124px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.widget-job-search {
+	overflow: hidden;
+}
+
+.widget-job-search .search {
+	position: relative;
+	padding: 10px;
+	width: 600px;
+	margin: 28px auto 8px;
+	overflow: hidden;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.widget-job-search .search .btn-area {
+	float: left;
+	width: 120px;
+	line-height: 42px;
+	background-color:#fff; 
+	border-radius: 3px;
+	text-align: center;
+	top:-1px;
+}
+
+.widget-job-search .btn-area .txt {
+	margin-left: 0px;
+	margin-right: 3px;
+	text-align: center;
+	color: #333;
+	font-style: normal;
+	position: relative;
+	font-size: 16px;
+}
+.widget-job-search .btn-area .icon-circle-down {
+	color: #34b9be;
+}
+
+.widget-job-search .text-box {
+	float: right;
+	padding: 10px 56px 10px 10px;
+	width: 448px;
+	height: 43px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.widget-job-search .text-box .text {
+	outline: 0px;
+	padding: 0px;
+	height: 22px;
+	border: 0px;
+}
+
+.widget-job-search .text-box .icon-search {
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	background-color: #fff;
+	font-size: 20px;
+	border: 0px;
+	color: #34b9be;
+}
+
+.margin-zx {
+	margin: 20px auto;
+}
+
+.main {
+	width: 834px;
+	margin: 0 auto;
+}
+
+.widget {
+	background:#fff;
+	box-shadow: 0 0 5px rgba(221,221,221,0.8);
+}
+
+.widget-job-filter {
+	padding: 15px;
+	position: relative;
+	margin-bottom: 40px;
+	border:1px solid #dfdfdf; 
+}
+
+.widget-job-filter dl {
+	font-size: 0;
+	overflow: hidden;
+	color: #999;
+	background: #f9f9f9;
+	margin-bottom: 2px;
+	padding: 10px 15px;
+}
+
+.widget-job-filter dt {
+	float: left;
+	width: 60px;
+	position: relative;
+	line-height: 26px;
+	font-size: 13px;
+}
+
+.widget-job-filter dt span {
+	position: absolute;
+	right: -15px;
+	top: 0px;
+}
+
+.widget-job-filter dd {
+	margin-left: 78px;
+	margin-right: -15px;
+	letter-spacing: 1px;
+}
+
+.widget-job-filter dd a {
+	color: #999;
+	display: inline-block;
+	margin: 3px 14px 3px 0px;
+	font-size: 13px;
+}
+
+.job-btn {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	width: 100%;
+	text-align: center;
+}
+
+.job-btn .btn {
+	background: #fff;
+	padding: 0 16px 3px;
+	border-radius: 0 0 2px 2px;
+	box-shadow: 0 3px 6px rgba(221,221,221,0.3);
+}
+
+.job-btn .btn .icon-arrow-down {
+	color: #f7c05e;
+	font-size: 16px;
+}
+
+.job-btn .btn .txt {
+	color: #999;
+	font-size: 12px;
+}
+
+.icontext .txt {
+	font-style: normal;
+	position: relative;
+	top:-2px;
+	margin-left: 3px;
+} 
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+/*职位列表*/
+.widget-job-list .item {
+	padding:15px;
+	background:#fff;
+	margin: 1px 0;
+	overflow: hidden;
+}
+
+.widget {
+	border:1px solid #dfdfdf;
+	box-shadow: 0 0 5px rgba(221,221,221,0.8);
+}
+
+.widget-job-list .company {
+	border-left: 1px dashed #eaeaea;
+	padding: 15px 0 15px 15px;
+	width: 320px;
+	overflow: hidden;
+}
+
+.widget-job-list .avatar {
+	float: left;
+	position: relative;
+}
+
+.widget-job-list .avatar img {
+	width: 58px;
+	height: 58px;
+	border: 1px solid #eaeaea;
+	border-radius: 8px; 
+}
+
+.widget-job-list .title {
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	margin-left: 70px;
+}
+
+.widget-job-list .title a {
+	max-width: 234px;
+	float: left;
+	color: #666;
+}
+
+.widget-job-list .block {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 70px;
+	font-size: 12px;
+	color: #999;
+}
+
+.widget-job-list .info {
+	margin-right: 335px;
+	position: relative;
+	font-size: 12px;
+}
+
+.widget-job-list .major {
+	overflow: hidden;
+	line-height: 28px;
+	color: #999;
+}
+
+.widget-job-list .major a {
+	max-width: 230px;
+	color: #333;
+	font-size: 16px;
+}
+
+.widget-job-list time {
+	margin: 0 20px;
+}
+
+.widget-job-list .icontext {
+	height: 28px;
+}
+
+.icontext {
+	color: #999;
+	position: relative;
+}
+
+.icontext .txt {
+	font-style: normal;
+	position: relative;
+}
+
+.widget-job-list .aide {
+	margin: 6px 0 10px;
+	line-height: 20px;
+}
+
+.widget-job-list .aide span {
+	margin-right: 20px;
+}
+
+.color-red {
+	color: #fe5c5c;
+}
+
+.widget-job-list .btn {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	line-height: 32px;
+	border-radius: 2px;
+	font-style: 14px;
+}
+
+.btn-cl1 {
+	width: 96px;
+	height: 32px;
+	background: #34b9be;
+	color: #fff;
+	text-align: center;
+}
+
+/*底部标语*/
+.footer_slogan {
+	background: url(../images/footer.png) center top no-repeat;
+	height: 445px;
+	font-size: 0;
+	margin-bottom: -262px;
+}
+
+/*底部*/
+.footer_slogan+.footer {
+	background: rgba(255,255,255 ,0.8);
+}
+.footer {
+	position: relative;
+	box-shadow: 0 0 5px rgba(221,221,221,0.8);
+	-webkit-box-shadow: 0 0 5px rgba(221,221,221,0.8);
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.footer a:hover {
+	color: #34b9be;
+}
+
+.footer,.footer a {
+	color: #999;
+}
+
+.footer_main {
+	width: 1125px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+/*底部左*/
+.footer_main .left {
+	margin: 28px 0 0 38px;
+	float: left;
+}
+
+.footer .logo {
+	overflow: hidden;
+	margin-bottom: 8px;
+}
+
+.footer .logo a {
+	float: left;
+}
+
+.footer .logo span {
+	margin-top: 24px;
+	margin-left: 9px;
+	float: left;
+}
+
+.footer .col-links {
+	float: left;
+	color: #666;
+	margin-left: 42px;
+	margin-right: 66px;
+	line-height: 24px;
+}
+
+/*底部右*/
+.footer .right {
+	margin: 44px 38px 0 0;
+	float: right;
+}
+
+.footer .media-links {
+	overflow: hidden;
+	margin-bottom: 22px;
+}
+
+.footer .media-links a {
+	margin: 0 -20px 0 68px;
+	float: left;
+}
+.footer .media-links i {
+	float: left;
+}
+
+.footer .icon-sina {
+	background: url(../images/icon_3.png) no-repeat;
+}
+
+.footer .icon-wx {
+	background: url(../images/icon_4.png) no-repeat;
+}
+
+.footer .icon-sina,.footer .icon-wx {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+.footer .media-links span {
+	float: left;
+	line-height: 25px;
+	margin-left: 8px;
+}
+
+.footer .code-links {
+	float: left;
+	width: 84px;
+	text-align: center;
+	margin-left: 70px;
+}
+
+.footer .code-links dt {
+	margin-bottom: 4px;
+}
+
+.footer .code-links dt img {
+	width: 84px;
+	height: 84px;
+}
+
+/*底部下*/
+.footer .copyright {
+	text-align: center;
+	border-top: 1px solid #eaeaea;
+	padding: 16px 0;
+	margin-top: 24px;
+}
+
+.footer .copyright span {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.footer .copyright img {
+	width: 30px;
+	height: 36px;
+}

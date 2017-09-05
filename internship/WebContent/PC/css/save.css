@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;	
+	outline: 0;
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,li {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+input {
+	border:0;
+}
+
+select{
+	border: 0px;
+	outline: 0px;
+}
+
+.middle {
+	padding:20px 0 10px;
+}
+
+.middle .row {
+	position:relative;
+	margin:14px 30px 0 55px;
+	color: #666;
+	font-size: 16px;
+}
+
+.middle .row .d-words {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right:10px;
+}
+
+.middle .row .td-words {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right:10px;
+	position: absolute;
+}
+
+.middle .row #username {
+	width: 240px;
+}
+
+.middle .row .txt {
+	width: 360px;
+	height: 40px;
+	background-color: #f0f0f0;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.middle .row .ttxt {
+	resize:none;
+	width: 360px;
+	height: 100px;
+	background-color: #f0f0f0;
+	padding: 5px 10px;
+	font-size: 14px;
+	border: none;
+	margin-left: 115px;
+}
+
+.middle .row .check-group .unit {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.check-item {
+	cursor: pointer;;
+	font-size: 0;
+	display: inline-block;
+}
+
+.check {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.check-title {
+	line-height: 22px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+
+
+.save1 {
+	width: 120px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 110px;
+	background-color: #fff;
+	color: #34b9be;
+	border: 1px solid #34b9be;
+
+}
+
+.cancel1 {
+	width: 120px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 16px;
+	background-color: #34b9be;
+	color: #fff;
+	border: 1px solid #34b9be;
+	
+}

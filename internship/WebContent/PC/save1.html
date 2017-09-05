@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/save.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="middle">
+		<div class="row">
+			<span class="d-words">姓名</span>
+			<input class="txt name" type="text" id="username"/>
+			<span class="check-group">
+				<span class="unit">
+					<lable class="check-item">
+						<input type="radio" class="check" value="男" name="sex" checked>
+						<span class="check-title">男</span>
+					</lable>
+				</span>
+				<span class="unit">
+					<lable class="check-item">
+						<input type="radio" class="check" value="女" name="sex">
+						<span class="check-title">女</span>
+					</lable>
+				</span>
+			</span>
+		</div>
+		<div class="row">
+			<span class="d-words">出生日期</span>
+			<input class="txt" type="text" id="birthday"/>
+		</div>
+		<div class="row">
+			<span class="d-words">开始工作年份</span>
+			<input class="txt" type="text" id="gznf"/>
+		</div>
+		<div class="row">
+			<span class="d-words">手机</span>
+			<input class="txt" type="text" id="phone"/>
+		</div>
+		<div class="row">
+			<span class="d-words">求职状态</span>
+			<select class="salary txt" id="qzzt">
+				<option id="txt" value="目前正在找工作">目前正在找工作</option>
+				<option class="txt" value="观望有好机会会考虑">观望有好机会会考虑</option>
+				<option class="txt" value="我目前不想换工作">我目前不想换工作</option>
+			</select>
+		</div>
+		<div class="row">
+			<span class="d-words">居住地</span>
+			<input class="txt" type="text" id="jzd"/>
+		</div>
+		<div class="row">
+			<input type="button" class="save1" id="save1" value="保存">
+			<input type="button" class="cancel1" id="cancel1" value="取消">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/save1.js"></script>
+</body>
+</html>
